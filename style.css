@@ -1,0 +1,24 @@
+
+body {
+    background-color: rgba(41, 216, 41, 0.837);
+    font: normal 15pt Arial;   
+}     
+section {
+    background-color: white;
+    color: green;
+    width: 600px;
+    height: 350px;
+    border-radius: 13px;
+}   
+input, button {
+    padding: 5px;
+    margin-bottom: 10px;
+    /*width: -webkit-fill-available;*/
+}
+span {
+    color: green;
+}
+label {
+    font-weight: bold;
+    width: -webkit-fill-available;
+}
