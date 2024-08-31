@@ -15,15 +15,78 @@
             <button id="botaoMostrarOpcoes">Mostrar Opções</button>            
         </div>
 
-        <div class="containerPadrao" id="opcoesIniciais">
-            <button id="botaoMostrarOpcoes">Adicionar</button>
-            <button id="botaoMostrarOpcoes">Visualizar</button>
-            <button id="botaoMostrarOpcoes">Deletar</button>
+        <div id="containerInicio">
+            <button id="bttAdicionar">Adicionar</button>
+            <button id="bttVisualizar">Visualizar</button>
+            <!--<button id="bttEditar">Editar</button>-->
+            <button id="bttDeletar">Deletar</button>
+            <button id="bttResumo">Resumo dos Gastos</button>
         </div>
 
-        <div id="container">
+        <div id="containerAdicionar">
+            <input type="text" id="descricao" placeholder="Descrição">
+            <input type="text" id="valor" placeholder="Valor">
+            <input type="text" id="categoria" placeholder="Categoria">
+            <input type="date" id="data">
+            <button id="bttEnviar">Enviar</button>
+        </div>
+
+        <div id="containerVisualizar">
+            <button id="filtrarData">Filtrar por Data</button>
+            <button id="filtrarCategoria">Filtrar porCategoria</button>
+            <button id="voltarInicio">Voltar</button>
+            <div id="visualizacao">
+
+            </div>
+        </div>
+
+        <div id="containerResumo">
+            <button id="gastoNoMes" >Total gasto no mês</button>
+            <button >Total gasto por categoria</button>
+            <button >Média de despesas diárias</button>
+            <button >Comparação com meses anteriores</button>
+            <div id="visualizacaoNoResumo">
+
+            </div>
+        </div>
+        <!--
+        <div id="containerEditar">
+            <input type="text" id="descricao" placeholder="Descrição">
+            <input type="text" id="valor" placeholder="Valor">
+            <input type="text" id="categoria" placeholder="Categoria">
+            <input type="date" id="data">
+            <button id="bttEnviar">Enviar</button>
+        </div>
+        -->
+
+        <div id="containerFiltrarData">
+            <button id="filtroSemana">Filtrar Por Semana</button>
+            <button id="filtroMes">Filtrar Por Mês</button>  
+            
+        </div>
+
+        <div id="containerFiltrarPeriodoSemana">
+            <p>Escolha uma data de início: </p>
+            <input type="date" id="dataInicio">
+            <button id="bttConfirmarData">Confirmar Data</button>
+        </div>
+
+        <div id="containerFiltrarCategoria">
+            <div id="resultadoFiltradoCategoria">
+
+            </div>
+        </div>
+
+        <div id="containerDeletar">
+            <input type="text" id="paraRemover">
+            <button id="bttConfirmar">Confirmar</button>
+            <div id="visualizacaoDeletar">
+
+            </div>
+            <button id="voltarInicioDeletar">Voltar</button>
 
         </div>
+        
     </main>
     <!-- <section>
         <div id="div01">
