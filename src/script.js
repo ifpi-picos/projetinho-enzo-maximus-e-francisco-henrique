@@ -1,30 +1,4 @@
-let gastos = [
-    {
-        descricao: "Carro",
-        valor: 4,
-        categoria: "Transorte",
-        data: new Date("2024-09-09")
-    },
-    {
-        descricao: "Moto",
-        valor: 40000,
-        categoria: "Transorte",
-        data: new Date("2024-10-09")
-    },
-    {
-        descricao: "Caminhão",
-        valor: 7826316,
-        categoria: "Dormir",
-        data: new Date("2024-09-09")
-    },
-    {
-        descricao: "Camelo",
-        valor: 50,
-        categoria: "Viajar",
-        data: new Date("2024-10-09")
-    }
-]
-
+let gastos = []
 
 // let filtrados = []
 
