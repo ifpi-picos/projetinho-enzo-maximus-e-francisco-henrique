@@ -50,6 +50,16 @@ input {
     justify-content: center;
     align-items: center;
 }
+select {
+    font: normal 10pt Arial;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #containerBtt{
     width: 100%;
@@ -146,3 +156,37 @@ p {
     gap: 10px;
     display: none;
 }
+
+#containerOpResumo {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    display: none;
+}
+
+#containerResumoCategoria {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    display: none;
+}
+
+#containerResumoMedia {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    display: none;
+}
+

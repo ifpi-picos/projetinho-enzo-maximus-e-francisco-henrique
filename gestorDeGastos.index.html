@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gestor de Gastos</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="src/stylesKau.css">
 </head>
@@ -18,21 +18,21 @@
         <div id="containerInicio">
             <button id="bttAdicionar">Adicionar</button>
             <button id="bttVisualizar">Visualizar</button>
-            <!--<button id="bttEditar">Editar</button>-->
+            <button id="bttEditar">Editar</button>
             <button id="bttDeletar">Deletar</button>
             <button id="bttResumo">Resumo dos Gastos</button>
         </div>
 
         <div id="containerAdicionar">
             <input type="text" id="descricao" placeholder="Descrição">
-            <input type="text" id="valor" placeholder="Valor">
+            <input type="number" id="valor" min="0" placeholder="Valor">
             <input type="text" id="categoria" placeholder="Categoria">
             <input type="date" id="data">
             <button id="bttEnviar">Enviar</button>
+            <button id="voltarInicioAdicionar">Voltar</button>
         </div>
 
         <div id="containerVisualizar">
-            <button id="filtrarData">Filtrar por Data</button>
             <button id="filtrarCategoria">Filtrar porCategoria</button>
             <button id="voltarInicio">Voltar</button>
             <div id="visualizacao">
@@ -40,24 +40,80 @@
             </div>
         </div>
 
-        <div id="containerResumo">
-            <button id="gastoNoMes" >Total gasto no mês</button>
-            <button >Total gasto por categoria</button>
-            <button >Média de despesas diárias</button>
-            <button >Comparação com meses anteriores</button>
-            <div id="visualizacaoNoResumo">
+        <div id="containerOpResumo">
+            <button id="gastoNoMes">Total gasto por mês</button>
+            <button id="gastoPorCategoria">Total gasto por categoria</button>
+            <button id="gastoMedioDiario">Média de Gastos diário</button>
+            <button id="voltarInicioResumoOp">Voltar</button>
+        </div>
 
+        <div id="containerResumo">
+            
+            <select id="selecionarMeses">
+                <option value="01">JAN</option>
+                <option value="02">FEV</option>
+                <option value="03">MAR</option>
+                <option value="04">ABR</option>
+                <option value="05">MAI</option>
+                <option value="06">JUN</option>
+                <option value="07">JUL</option>
+                <option value="08">AGO</option>
+                <option value="09">SET</option>
+                <option value="10">OUT</option>
+                <option value="11">VOV</option>
+                <option value="12">DEZ</option>
+            </select>
+            
+            <button id="voltarInicioResumo">Voltar</button>
+            <button id="confirmarMes">Confirmar</button>
+
+            <div id="visualizacaoNoResumo">
+                
             </div>
         </div>
-        <!--
-        <div id="containerEditar">
-            <input type="text" id="descricao" placeholder="Descrição">
-            <input type="text" id="valor" placeholder="Valor">
-            <input type="text" id="categoria" placeholder="Categoria">
-            <input type="date" id="data">
-            <button id="bttEnviar">Enviar</button>
+
+        <div id="containerResumoCategoria">
+            
+            <input type="text" id="inputCategoria" placeholder="Digite a categora">
+            <button id="confirmarCategoria">Confirmar</button>
+            <button id="voltarInicioResumoCategoria">Voltar</button>
+
+            <div id="visualizacaoNoResumoCategoria">
+                
+            </div>
         </div>
-        -->
+        
+        <div id="containerResumoMedia">
+            
+            <select id="selecionarMesesMedia">
+                <option value="01">JAN</option>
+                <option value="02">FEV</option>
+                <option value="03">MAR</option>
+                <option value="04">ABR</option>
+                <option value="05">MAI</option>
+                <option value="06">JUN</option>
+                <option value="07">JUL</option>
+                <option value="08">AGO</option>
+                <option value="09">SET</option>
+                <option value="10">OUT</option>
+                <option value="11">VOV</option>
+                <option value="12">DEZ</option>
+            </select>
+            
+            <button id="voltarInicioResumoMedia">Voltar</button>
+            <button id="confirmarMesMedia">Confirmar</button>
+            <div id="visualizacaoNoResumoMedia">
+                
+            </div>
+        </div>
+
+        <div id="containerEditar">
+            <p id="pesquisaEditarTexto">Digite a categoria</p>
+            <input type="text" id="pesquisaEditar" placeholder="pesquise para editar">
+            <button id="bttPesquisar">Pesquisar</button>
+            <button id="bttVoltarDoEditar">Voltar</button>
+        </div>
+       
 
         <div id="containerFiltrarData">
             <button id="filtroSemana">Filtrar Por Semana</button>
